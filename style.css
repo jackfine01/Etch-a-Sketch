@@ -34,6 +34,6 @@ html,body{
 
 .row{
     display:flex;
-    background-color: beige;
+    background-color: white;
     flex: 1 1 auto;
 }
