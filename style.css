@@ -17,5 +17,23 @@ html,body{
 
 .container{
     display: flex;
+    flex-direction: row;
+    gap: 1px;
+    height: 100%;
+    background-color: black;
+}
+
+.column{
+    display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
+    height: 100%;
+    justify-content: space-evenly;
+    gap: 1px;
+}
+
+.row{
+    display:flex;
+    background-color: beige;
+    flex: 1 1 auto;
 }
