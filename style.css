@@ -1,6 +1,8 @@
-body{
+html,body{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 0;
 }
 
 .header{
@@ -10,9 +12,7 @@ body{
     align-items: center;
     background-color: blue;
     color: white;
-    height: 20%;
-    width: 20%;
-    flex: 1 0 20%;
+    flex: 0 0 5%;
 }
 
 .container{
