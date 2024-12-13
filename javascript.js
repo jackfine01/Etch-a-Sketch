@@ -5,31 +5,33 @@ let resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', 
     () => 
         {
-            let size = prompt("How many squares per side would you like?");
+            let size = prompt("How many squares per side would you like? (Limit 100)");
+            if(size<101){
             //Delete Old Columns/Rows
-            let columnsToDelete = document.querySelectorAll('.column');
+                let columnsToDelete = document.querySelectorAll('.column');
 
-            columnsToDelete.forEach(column=> {
-                column.remove();
-                }
-            )
+                columnsToDelete.forEach(column=> {
+                    column.remove();
+                    }
+                )
             // Add New Columns/Rows
-            for(let i = 0; i< size; i++){
-                let col = document.createElement('div');
-                col.className = "column";
-                container.appendChild(col);
-                    for(let j = 0; j < size; j++){
-                        let row = document.createElement('div');
-                        row.className = 'row';
-                        col.appendChild(row);            
-                    };
-                    const rows = document.querySelectorAll('.row');
-            
-                    rows.forEach(row=> {
-                        row.addEventListener('mouseenter', () => {
-                            row.style.backgroundColor = 'black';
+                for(let i = 0; i< size; i++){
+                    let col = document.createElement('div');
+                    col.className = "column";
+                    container.appendChild(col);
+                        for(let j = 0; j < size; j++){
+                            let row = document.createElement('div');
+                            row.className = 'row';
+                            col.appendChild(row);            
+                        };
+                        const rows = document.querySelectorAll('.row');
+                
+                        rows.forEach(row=> {
+                            row.addEventListener('mouseenter', () => {
+                                row.style.backgroundColor = 'black';
+                            })
                         })
-                    })
+                };
             };
         }
     );
