@@ -1,5 +1,3 @@
-// Grid Creation Feature
-
 const container = document.createElement('div');
 container.className = "container";
 document.body.appendChild(container);
@@ -17,13 +15,10 @@ for(let i = 0; i< 15; i++){
 
         rows.forEach(row=> {
             row.addEventListener('mouseenter', () => {
-                row.classList.toggle('moused')
+                row.style.backgroundColor = 'black';
             })
-
         })
 };
-
-// Mouse Hover Feature
 
 
 
