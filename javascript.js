@@ -1,3 +1,9 @@
+document.getElementById('reset').onclick = function() {alert('I am working.');};
+
+
+
+
+
 const container = document.createElement('div');
 container.className = "container";
 document.body.appendChild(container);
