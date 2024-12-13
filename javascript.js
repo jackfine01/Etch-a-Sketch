@@ -1,3 +1,11 @@
+let size = 0;
+
+function getSize() 
+    {
+        size = prompt("How many squares per side would you like?");
+        return size;
+    };
+
 document.getElementById('reset').onclick = function() {alert('I am working.');};
 
 
